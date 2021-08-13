@@ -1,0 +1,184 @@
+{
+  "barbarian": {
+    "hitDie": 12,
+    "alignment": "any nonlawful",
+    "firstLevelSkillPoint": "(4+int)*4",
+    "additionnalSkillPoint": "4+int",
+    "skills": [
+      "climb",
+      "craft",
+      "handleAnimal",
+      "intimidate",
+      "jump",
+      "listen",
+      "ride",
+      "survival",
+      "swim"
+    ],
+    "features": [
+      { "weaponArmorProficiency": "A barbarian is proficient with all simple and martial weapons, light armor, medium armor, and shields (except tower shields)." },
+      { "fastMovement": "A barbarian’s land speed is faster than the norm for his race by +10 feet. This benefit applies only when he is wearing no armor, light armor, or medium armor and not carrying a heavy load. Apply this bonus before modifying the barbarian’s speed because of any load carried or armor worn." },
+      { "illiteracy": "Barbarians are the only characters who do not automatically know how to read and write. A barbarian may spend 2 skill points to gain the ability to read and write all languages he is able to speak. A barbarian who gains a level in any other class automatically gains literacy. Any other character who gains a barbarian level does not lose the literacy he or she already had." },
+      { "rage": "A barbarian can fly into a rage a certain number of times per day. In a rage, a barbarian temporarily gains a +4 bonus to Strength, a +4 bonus to Constitution, and a +2 morale bonus on Will saves, but he takes a -2 penalty to Armor Class. The increase in Constitution increases the barbarian’s hit points by 2 points per level, but these hit points go away at the end of the rage when his Constitution score drops back to normal. (These extra hit points are not lost first the way temporary hit points are.) While raging, a barbarian cannot use any Charisma-, Dexterity-, or Intelligence-based skills (except for Balance, Escape Artist, Intimidate, and Ride), the Concentration skill, or any abilities that require patience or concentration, nor can he cast spells or activate magic items that require a command word, a spell trigger (such as a wand), or spell completion (such as a scroll) to function. He can use any feat he has except Combat Expertise, item creation feats, and metamagic feats. A fit of rage lasts for a number of rounds equal to 3 + the character’s (newly improved) Constitution modifier. A barbarian may prematurely end his rage. At the end of the rage, the barbarian loses the rage modifiers and restrictions and becomes fatigued (-2 penalty to Strength, -2 penalty to Dexterity, can’t charge or run) for the duration of the current encounter (unless he is a 17th-level barbarian, at which point this limitation no longer applies). A barbarian can fly into a rage only once per encounter. At 1st level he can use his rage ability once per day. At 4th level and every four levels thereafter, he can use it one additional time per day (to a maximum of six times per day at 20th level). Entering a rage takes no time itself, but a barbarian can do it only during his action, not in response to someone else’s action." },
+      { "uncannyDodge": "At 2nd level, a barbarian retains his Dexterity bonus to AC (if any) even if he is caught flat-footed or struck by an invisible attacker. However, he still loses his Dexterity bonus to AC if immobilized. If a barbarian already has uncanny dodge from a different class, he automatically gains improved uncanny dodge instead." },
+      { "improvedUncannyDodge": "At 5th level and higher, a barbarian can no longer be flanked. This defense denies a rogue the ability to sneak attack the barbarian by flanking him, unless the attacker has at least four more rogue levels than the target has barbarian levels. If a character already has uncanny dodge from a second class, the character automatically gains improved uncanny dodge instead, and the levels from the classes that grant uncanny dodge stack to determine the minimum level a rogue must be to flank the character." },
+      { "trapSense": "Starting at 3rd level, a barbarian gains a +1 bonus on Reflex saves made to avoid traps and a +1 dodge bonus to AC against attacks made by traps. These bonuses rise by +1 every three barbarian levels thereafter (6th, 9th, 12th, 15th, and 18th level). Trap sense bonuses gained from multiple classes stack." },
+      { "damageReduction": "At 7th level, a barbarian gains Damage Reduction. Subtract 1 from the damage the barbarian takes each time he is dealt damage from a weapon or a natural attack. At 10th level, and every three barbarian levels thereafter (13th, 16th, and 19th level), this damage reduction rises by 1 point. Damage reduction can reduce damage to 0 but not below 0." },
+      { "greaterRage": "At 11th level, a barbarian’s bonuses to Strength and Constitution during his rage each increase to +6, and his morale bonus on Will saves increases to +3. The penalty to AC remains at -2" },
+      { "indomitableWill": "While in a rage, a barbarian of 14th level or higher gains a +4 bonus on Will saves to resist enchantment spells. This bonus stacks with all other modifiers, including the morale bonus on Will saves he also receives during his rage." },
+      { "tirelessRage": "At 17th level and higher, a barbarian no longer becomes fatigued at the end of his rage." },
+      { "mightyRage": "At 20th level, a barbarian’s bonuses to Strength and Constitution during his rage each increase to +8, and his morale bonus on Will saves increases to +4. The penalty to AC remains at -2." }
+    ],
+    "additionnalInfo": [
+      "A barbarian who becomes lawful loses the ability to rage and cannot gain more levels as a barbarian. He retains all the other benefits of the class (damage reduction, fast movement, trap sense, and uncanny dodge)."
+    ]
+  },
+  "bard": {
+    "hitDie": 6,
+    "alignment": "any nonlawful",
+    "firstLevelSkillPoint": "(6+int)*4",
+    "additionnalSkillPoint": "6+int",
+    "skills": [
+      "appraise",
+      "balance",
+      "bluff",
+      "climb",
+      "concentration",
+      "craft",
+      "decipherScript",
+      "diplomacy",
+      "disguise",
+      "escapeArtist",
+      "gatherInformation",
+      "hide",
+      "jump",
+      "knowledgeAll",
+      "listen",
+      "moveSilently",
+      "perform",
+      "profession",
+      "senseMotive",
+      "sleightOfHand",
+      "speakLanguage",
+      "spellcraft",
+      "Swim",
+      "Tumble",
+      "useMagicDevice"
+    ],
+    "features": [
+      { "weaponArmorProficiency": "A bard is proficient with all simple weapons, plus the longsword, rapier, sap, short sword, shortbow, and whip. Bards are proficient with light armor and shields (except tower shields). A bard can cast bard spells while wearing light armor without incurring the normal arcane spell failure chance. However, like any other arcane spellcaster, a bard wearing medium or heavy armor or using a shield incurs a chance of arcane spell failure if the spell in question has a somatic component (most do). A multiclass bard still incurs the normal arcane spell failure chance for arcane spells received from other classes." },
+      { "bardicKnowledge": "A bard may make a special bardic knowledge check with a bonus equal to his bard level + his Intelligence modifier to see whether he knows some relevant information about local notable people, legendary items, or noteworthy places. (If the bard has 5 or more ranks in Knowledge (history), he gains a +2 bonus on this check.) A successful bardic knowledge check will not reveal the powers of a magic item but may give a hint as to its general function. A bard may not take 10 or take 20 on this check; this sort of knowledge is essentially random." },
+      { "bardicMusic": "Once per day per bard level, a bard can use his song or poetics to produce magical effects on those around him (usually including himself, if desired). While these abilities fall under the category of bardic music and the descriptions discuss singing or playing instruments, they can all be activated by reciting poetry, chanting, singing lyrical songs, singing melodies, whistling, playing an instrument, or playing an instrument in combination with some spoken performance. Each ability requires both a minimum bard level and a minimum number of ranks in the Perform skill to qualify; if a bard does not have the required number of ranks in at least one Perform skill, he does not gain the bardic music ability until he acquires the needed ranks. Starting a bardic music effect is a standard action. Some bardic music abilities require concentration, which means the bard must take a standard action each round to maintain the ability. Even while using bardic music that doesn’t require concentration, a bard cannot cast spells, activate magic items by spell completion (such as scrolls), spell trigger (such as wands), or command word. Just as for casting a spell with a verbal component, a deaf bard has a 20% chance to fail when attempting to use bardic music. If he fails, the attempt still counts against his daily limit." }
+    ],
+    "additionnalInfo": [
+    ]
+  },
+  "cleric": {
+    "hitDie": 12,
+    "alignment": "any nonlawful",
+    "firstLevelSkillPoint": "(4+int)*4",
+    "additionnalSkillPoint": "4+int",
+    "skill": [
+    ],
+    "features": [
+    ],
+    "additionnalInfo": [
+    ]
+  },
+  "druid": {
+    "hitDie": 12,
+    "alignment": "any nonlawful",
+    "firstLevelSkillPoint": "(4+int)*4",
+    "additionnalSkillPoint": "4+int",
+    "skill": [
+    ],
+    "features": [
+    ],
+    "additionnalInfo": [
+    ]
+  },
+  "fighter": {
+    "hitDie": 12,
+    "alignment": "any nonlawful",
+    "firstLevelSkillPoint": "(4+int)*4",
+    "additionnalSkillPoint": "4+int",
+    "skill": [
+    ],
+    "features": [
+    ],
+    "additionnalInfo": [
+    ]
+  },
+  "monk": {
+    "hitDie": 12,
+    "alignment": "any nonlawful",
+    "firstLevelSkillPoint": "(4+int)*4",
+    "additionnalSkillPoint": "4+int",
+    "skill": [
+    ],
+    "features": [
+    ],
+    "additionnalInfo": [
+    ]
+  },
+  "paladin": {
+    "hitDie": 12,
+    "alignment": "any nonlawful",
+    "firstLevelSkillPoint": "(4+int)*4",
+    "additionnalSkillPoint": "4+int",
+    "skill": [
+    ],
+    "features": [
+    ],
+    "additionnalInfo": [
+    ]
+  },
+  "ranger": {
+    "hitDie": 12,
+    "alignment": "any nonlawful",
+    "firstLevelSkillPoint": "(4+int)*4",
+    "additionnalSkillPoint": "4+int",
+    "skill": [
+    ],
+    "features": [
+    ],
+    "additionnalInfo": [
+    ]
+  },
+  "rogue": {
+    "hitDie": 12,
+    "alignment": "any nonlawful",
+    "firstLevelSkillPoint": "(4+int)*4",
+    "additionnalSkillPoint": "4+int",
+    "skill": [
+    ],
+    "features": [
+    ],
+    "additionnalInfo": [
+    ]
+  },
+  "sorcerer": {
+    "hitDie": 12,
+    "alignment": "any nonlawful",
+    "firstLevelSkillPoint": "(4+int)*4",
+    "additionnalSkillPoint": "4+int",
+    "skill": [
+    ],
+    "features": [
+    ],
+    "additionnalInfo": [
+    ]
+  },
+  "wizard": {
+    "hitDie": 12,
+    "alignment": "any nonlawful",
+    "firstLevelSkillPoint": "(4+int)*4",
+    "additionnalSkillPoint": "4+int",
+    "skill": [
+    ],
+    "features": [
+    ],
+    "additionnalInfo": [
+    ]
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "Appraise": {
+    "keyAbility": "int",
+    "classSkill": [
+      "bard"
+    ]
+  },
+  "Balance": {
+    "keyAbility": "dex",
+    "classSkill": [
+      "bard"
+    ]
+  },
+  "Bluff": {
+    "keyAbility": "cha",
+    "classSkill": [
+      "bard"
+    ]
+  },
+  "Climb": {
+    "keyAbility": "str",
+    "classSkill": [
+      "barbarian",
+      "bard",
+      "fighter"
+    ]
+  },
+  "Concentration": {
+    "keyAbility": "con",
+    "classSkill": [
+      "bard",
+      "cleric",
+      "druid"
+    ]
+  },
+  "Craft": {
+    "keyAbility": "int",
+    "classSkill": [
+      "barbarian",
+      "bard",
+      "cleric",
+      "druid",
+      "fighter"
+    ],
+    "study": [
+      "Alchemy",
+      "Armorsmithing",
+      "Bowmaking",
+      "Weaponsmithing",
+      "Trapmaking"
+    ]
+  },
+  "DecipherScript": {
+    "keyAbility": "int",
+    "classSkill": [
+      "bard"
+    ]
+  },
+  "Diplomacy": {
+    "keyAbility": "cha",
+    "classSkill": [
+      "bard",
+      "cleric",
+      "druid"
+    ]
+  },
+  "DisableDevice": {
+    "keyAbility": "int",
+    "classSkill": []
+  },
+  "Disguise": {
+    "keyAbility": "cha",
+    "classSkill": [
+      "bard"
+    ]
+  },
+  "EscapeArtist": {
+    "keyAbility": "dex",
+    "classSkill": [
+      "bard"
+    ]
+  },
+  "Forgery": {
+    "keyAbility": "int",
+    "classSkill": []
+  },
+  "GatherInformation": {
+    "keyAbility": "cha",
+    "classSkill": [
+      "bard"
+    ]
+  },
+  "HandleAnimal": {
+    "keyAbility": "cha",
+    "classSkill": [
+      "barbarian",
+      "druid",
+      "fighter"
+    ]
+  },
+  "Heal": {
+    "keyAbility": "wis",
+    "classSkill": [
+      "cleric",
+      "druid"
+    ]
+  },
+  "Hide": {
+    "keyAbility": "dex",
+    "classSkill": [
+      "bard"
+    ]
+  },
+  "Intimidate": {
+    "keyAbility": "cha",
+    "classSkill": [
+      "barbarian",
+      "fighter"
+    ]
+  },
+  "Jump": {
+    "keyAbility": "str",
+    "classSkill": [
+      "barbarian",
+      "bard",
+      "fighter"
+    ]
+  },
+  "Knowledge": {
+    "keyAbility": "int",
+    "classSkill": [
+      "bard",
+      "cleric",
+      "druid"
+    ],
+    "study": [
+      "Arcana",
+      "ArchitectureEngineering",
+      "Dungeoneering",
+      "Geography",
+      "History",
+      "Local",
+      "Nature",
+      "NobilityRoyalty",
+      "Religion",
+      "planes"
+    ]
+  },
+  "Listen": {
+    "keyAbility": "wis",
+    "classSkill": [
+      "barbarian",
+      "bard",
+      "druid"
+    ]
+  },
+  "MoveSilently": {
+    "keyAbility": "dex",
+    "classSkill": [
+      "bard"
+    ]
+  },
+  "OpenLock": {
+    "keyAbility": "dex",
+    "classSkill": []
+  },
+  "Perform": {
+    "keyAbility": "cha",
+    "classSkill": [
+      "bard"
+    ],
+    "study": [
+      "Act",
+      "Comedy",
+      "Dance",
+      "KeyboardInstruments",
+      "Oratory",
+      "PercussionInstruments",
+      "StringInstruments",
+      "WindInstruments",
+      "Sing"
+    ]
+  },
+  "Profession": {
+    "keyAbility": "wis",
+    "classSkill": [
+      "bard",
+      "cleric",
+      "druid"
+    ]
+  },
+  "Ride": {
+    "keyAbility": "dex",
+    "classSkill": [
+      "barbarian",
+      "druid",
+      "fighter"
+    ]
+  },
+  "Search": {
+    "keyAbility": "int",
+    "classSkill": []
+  },
+  "SenseMotive": {
+    "keyAbility": "wis",
+    "classSkill": [
+      "bard"
+    ]
+  },
+  "SleightOfHand": {
+    "keyAbility": "dex",
+    "classSkill": [
+      "bard"
+    ]
+  },
+  "Spellcraft": {
+    "keyAbility": "int",
+    "classSkill": [
+      "bard",
+      "cleric",
+      "druid"
+    ]
+  },
+  "Spot": {
+    "keyAbility": "wis",
+    "classSkill": [
+      "druid"
+    ]
+  },
+  "Survival": {
+    "keyAbility": "wis",
+    "classSkill": [
+      "barbarian",
+      "druid"
+    ]
+  },
+  "Swim": {
+    "keyAbility": "str",
+    "classSkill": [
+      "barbarian",
+      "bard",
+      "druid",
+      "fighter"
+    ]
+  },
+  "Tumble": {
+    "keyAbility": "dex",
+    "classSkill": [
+      "bard"
+    ]
+  },
+  "UseMagicDevice": {
+    "keyAbility": "cha",
+    "classSkill": [
+      "bard"
+    ]
+  },
+  "UseRope": {
+    "keyAbility": "dex",
+    "classSkill": []
+  }
+}

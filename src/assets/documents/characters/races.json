@@ -1,0 +1,117 @@
+{
+  "humans": {
+    "size": "M",
+    "speed": 30,
+    "automaticLanguage": [ "common" ],
+    "bonusLanguage": ["any"],
+    "favoredClass": [ "any" ],
+    "moreInfo": [ "1 extra feat at 1st level.", "4 extra skill points at 1st level and 1 extra skill point at each additional level." ]
+  },
+  "dwarves": {
+    "size": "M",
+    "speed": 20,
+    "automaticLanguage": [ "common", "dwarven" ],
+    "bonusLanguage": [ "giant", "gnome", "goblin", "orc", "terran", "undercommon" ],
+    "favoredClass": [ "fighter" ],
+    "bonus": [
+      { "const": 2 },
+      { "charisma": -2 }
+    ],
+    "ability": [ "darkvision", "stonecunning", "weaponFamiliarity", "stability" ],
+    "moreInfo": [
+      "+2 racial bonus on saving throws against poison.",
+      "+2 racial bonus on saving throws against spells and spell-like effects.",
+      "+1 racial bonus on attack rolls against orcs and goblinoids.",
+      "+4 dodge bonus to Armor Class against monsters of the giant type.",
+      "+2 racial bonus on Appraise checks that are related to stone or metal items.",
+      "+2 racial bonus on Craft checks that are related to stone or metal.",
+      "Can move at full speed even when wearing medium or heavy armor or when carrying a medium or heavy load."
+    ]
+  },
+  "elves": {
+    "size": "M",
+    "speed": 30,
+    "automaticLanguage": [ "common", "elven" ],
+    "bonusLanguage": [ "draconic", "gnoll", "gnome", "goblin", "orc", "sylvan" ],
+    "favoredClass": [ "wizard" ],
+    "bonus": [
+      { "dext": 2 },
+      { "const": -2 }
+    ],
+    "ability": [ "lowLightVision", "stonecunning", "weaponFamiliarity", "stability" ],
+    "weaponProficiency": [ "longsword", "rapier", "longbow", "shortbow" ],
+    "moreInfo": [
+      "Immunity to magic sleep effects."
+    ]
+  },
+  "gnomes": {
+    "bonus": [
+      { "const": 2 },
+      { "str": -2 }
+    ],
+    "size": "S",
+    "speed": 20,
+    "ability": [ "lowLightVision", "weaponFamiliarity" ],
+    "moreInfo": [
+      "+2 racial bonus on saving throws against illusions.",
+      "Add +1 to the Difficulty Class for all saving throws against illusion spells cast by gnomes. This adjustment stacks with those from similar effects.",
+      "+1 racial bonus on attack rolls against kobolds and goblinoids.",
+      "+4 dodge bonus to Armor Class against monsters of the giant type.",
+      "+2 racial bonus on Listen checks.",
+      "+2 racial bonus on Craft (alchemy) checks.",
+      "Can speak with a burrowing mammal (a badger, fox, rabbit, or the like, see below). This ability is innate to gnomes. See the speak with animals spell description.",
+      "Spell-Like Abilities: 1/day—speak with animals (burrowing mammal only, duration 1 minute). A gnome with a Charisma score of at least 10 also has the following spell-like abilities: 1/day—dancing lights, ghost sound, prestidigitation. Caster level 1st; save DC 10 + gnome’s Cha modifier + spell level."
+    ],
+    "automaticLanguage": [ "common", "gnome" ],
+    "bonusLanguage": [ "draconic", "dwarven", "elven", "giant", "goblin", "orc" ],
+    "favoredClass": [ "bard" ]
+  },
+  "halfElves": {
+    "size": "M",
+    "speed": 30,
+    "ability": [ "lowLightVision", "immuneSleep" ],
+    "moreInfo": [
+      "+2 racial bonus on saving throws against enchantment spells or effects.",
+      "+1 racial bonus on Listen, Search, and Spot checks.",
+      "+2 racial bonus on Diplomacy and Gather Information checks.",
+      "Elven Blood: For all effects related to race, a half-elf is considered an elf."
+    ],
+    "automaticLanguage": [ "common", "elven" ],
+    "bonusLanguage": [ "any" ],
+    "favoredClass": [ "any" ]
+  },
+  "halfOrcs": {
+    "size": "M",
+    "speed": 30,
+    "bonus": [
+      { "str": 2 },
+      { "int": -2 },
+      { "cha": -2 }
+    ],
+    "moreInfo": [
+      "A half-orc’s starting Intelligence score is always at least 3. If this adjustment would lower the character’s score to 1 or 2, his score is nevertheless 3.",
+      "Orc Blood: For all effects related to race, a half-orc is considered an orc."
+    ],
+    "ability": [ "darkvision" ],
+    "automaticLanguage": [ "common", "orc" ],
+    "bonusLanguage": [ "draconic", "giant", "gnoll", "goblin", "abyssal" ],
+    "favoredClass": [ "barbarian" ]
+  },
+  "halflings": {
+    "size": "S",
+    "speed": 20,
+    "bonus": [
+      { "dex": 2 },
+      { "str": -2 }
+    ],
+    "moreInfo": [
+      "+2 racial bonus on Climb, Jump, Listen, and Move Silently checks.",
+      "+1 racial bonus on all saving throws.",
+      "+2 morale bonus on saving throws against fear: This bonus stacks with the halfling’s +1 bonus on saving throws in general.",
+      "+1 racial bonus on attack rolls with thrown weapons and slings."
+    ],
+    "automaticLanguage": [ "common", "halfling" ],
+    "bonusLanguage": [ "dwarven", "elven", "gnome", "goblin", "orc" ],
+    "favoredClass": [ "rogue" ]
+  }
+}

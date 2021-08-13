@@ -1,0 +1,54 @@
+{
+  "name": "fable-manager",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "vue-cli-service serve --port 80",
+    "serve": "vue-cli-service serve --watchAll",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "description": "FableManager",
+  "author": {
+    "name": "Guillaume Barbier"
+  },
+  "dependencies": {
+    "vue": "^2.6.12",
+    "vue-router": "3.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/helper-compilation-targets": "^7.13.16",
+    "@vue/cli-plugin-babel": "3.0.4",
+    "@vue/cli-plugin-eslint": "3.0.4",
+    "@vue/cli-service": "3.0.4",
+    "eslint": "^4.0.0",
+    "eslint-plugin-vue": "4.7.1",
+    "node-fetch": "^2.6.1",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
