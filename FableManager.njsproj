@@ -31,6 +31,7 @@
   <ItemGroup>
     <Content Include="public\index.html" />
     <Content Include="src\App.vue" />
+    <Content Include="src\assets\data\characters\characters.json" />
     <Content Include="src\assets\documents\characters\classes.json" />
     <Content Include="src\assets\documents\characters\races.json" />
     <Content Include="src\assets\documents\skills.json" />
@@ -48,8 +49,10 @@
     <Folder Include="public\" />
     <Folder Include="src\" />
     <Folder Include="src\assets\" />
+    <Folder Include="src\assets\data\characters\" />
     <Folder Include="src\assets\documents\" />
     <Folder Include="src\assets\documents\characters\" />
+    <Folder Include="src\assets\data\" />
     <Folder Include="src\components\" />
     <Folder Include="src\components\characters\" />
   </ItemGroup>

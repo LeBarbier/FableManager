@@ -1,0 +1,14 @@
+[
+  {
+    "name": "jacques",
+    "level": "2",
+    "race": "half-orc",
+    "class": "barbarian"
+  },
+  {
+    "name": "alice",
+    "level": "3",
+    "race": "half-elf",
+    "class": "sorcerer"
+  }
+]

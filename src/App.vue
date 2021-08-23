@@ -20,9 +20,14 @@
 </script>
 
 <style>
+    html {
+        font-family: Garamond;
+    }
+
     .conteneur {
         left: 275px;
         position: absolute;
+        width: 100%;
     }
 </style>
 
