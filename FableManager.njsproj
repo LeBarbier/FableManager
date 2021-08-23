@@ -35,6 +35,7 @@
     <Content Include="src\assets\documents\characters\races.json" />
     <Content Include="src\assets\documents\skills.json" />
     <Content Include="src\assets\logo_placeholder.png" />
+    <Content Include="src\assets\Valia 2021-07-23-09-11.jpeg" />
     <Content Include="src\components\characters\Character.vue" />
     <Content Include="src\components\characters\Characters.vue" />
     <Content Include="src\components\Home.vue" />

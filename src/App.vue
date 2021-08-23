@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <fm-home />
+        <!--<fm-home />-->
         <fm-nav-bar />
         <router-view class="conteneur"></router-view>
     </div>
