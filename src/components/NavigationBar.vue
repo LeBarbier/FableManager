@@ -5,6 +5,7 @@
             <li class="menu__item"><router-link to="/Characters">Characters</router-link></li>
             <li class="menu__item"><router-link to="/">Monsters</router-link></li>
             <li class="menu__item"><router-link to="/">Towns</router-link></li>
+            <li class="menu__item"><router-link to="/World">World</router-link></li>
         </ul>
     </div>
 </template>

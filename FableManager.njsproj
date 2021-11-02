@@ -36,12 +36,17 @@
     <Content Include="src\assets\documents\characters\races.json" />
     <Content Include="src\assets\documents\skills.json" />
     <Content Include="src\assets\logo_placeholder.png" />
+    <Content Include="src\assets\Omerion.jpg" />
     <Content Include="src\assets\Valia 2021-07-23-09-11.jpeg" />
-    <Content Include="src\components\characters\Character.vue" />
-    <Content Include="src\components\characters\Characters.vue" />
+    <Content Include="src\components\characters\Personnage.vue" />
+    <Content Include="src\components\characters\Personnages.vue" />
     <Content Include="src\components\Home.vue" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="src\components\map\World.vue" />
+    <Content Include="src\components\characters\PersonnageService.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="src\routes.js" />
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +60,7 @@
     <Folder Include="src\assets\data\" />
     <Folder Include="src\components\" />
     <Folder Include="src\components\characters\" />
+    <Folder Include="src\components\map\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="babel.config.js" />
