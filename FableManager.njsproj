@@ -32,21 +32,32 @@
     <Content Include="public\index.html" />
     <Content Include="src\App.vue" />
     <Content Include="src\assets\data\characters\characters.json" />
+    <Content Include="src\assets\data\villes\townFeatures.js" />
     <Content Include="src\assets\documents\characters\classes.json" />
     <Content Include="src\assets\documents\characters\races.json" />
     <Content Include="src\assets\documents\skills.json" />
     <Content Include="src\assets\logo_placeholder.png" />
     <Content Include="src\assets\Omerion.jpg" />
+    <Content Include="src\assets\villes\edinburgh.png" />
+    <Content Include="src\assets\villes\fronxa.png" />
+    <Content Include="src\assets\villes\lostpaw.png" />
+    <Content Include="src\assets\villes\osa.png" />
+    <Content Include="src\assets\villes\silvercoves.png" />
     <Content Include="src\assets\Valia 2021-07-23-09-11.jpeg" />
     <Content Include="src\components\characters\Personnage.vue" />
     <Content Include="src\components\characters\Personnages.vue" />
     <Content Include="src\components\Home.vue" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="src\components\map\Map.vue" />
+    <Content Include="src\assets\data\villes\villes.json" />
     <Content Include="src\components\map\World.vue" />
     <Content Include="src\components\characters\PersonnageService.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="src\components\villes\Ville.vue" />
+    <Content Include="src\components\villes\Villes.vue" />
+    <Content Include="src\components\villes\VilleService.js" />
     <Content Include="src\routes.js" />
   </ItemGroup>
   <ItemGroup>
@@ -55,12 +66,15 @@
     <Folder Include="src\" />
     <Folder Include="src\assets\" />
     <Folder Include="src\assets\data\characters\" />
+    <Folder Include="src\assets\data\villes\" />
     <Folder Include="src\assets\documents\" />
     <Folder Include="src\assets\documents\characters\" />
     <Folder Include="src\assets\data\" />
+    <Folder Include="src\assets\villes\" />
     <Folder Include="src\components\" />
     <Folder Include="src\components\characters\" />
     <Folder Include="src\components\map\" />
+    <Folder Include="src\components\villes\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="babel.config.js" />

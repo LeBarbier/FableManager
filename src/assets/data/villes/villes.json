@@ -1,0 +1,52 @@
+{
+  "SILVERCOVES": {
+    "name": "Silvercoves",
+    "pngPath": "../../assets/villes/silvercoves.png",
+    "type": "",
+    "culture": "",
+    "population": 0,
+    "temperature": 16,
+    "elevation": 480,
+    "features": ["citadel", "religious_centre"]
+  },
+  "EDINBURGH": {
+    "name": "Edinburgh",
+    "pngPath": "../../assets/villes/edinburgh.png",
+    "type": "",
+    "culture": "",
+    "population": 0,
+    "temperature": 0,
+    "elevation": 0,
+    "features": []
+  },
+  "OSA": {
+    "name": "Osa",
+    "pngPath": "../../assets/villes/osa.png",
+    "type": "",
+    "culture": "",
+    "population": 0,
+    "temperature": 0,
+    "elevation": 0,
+    "features": []
+  },
+  "FRONXA": {
+    "name": "Fronxa",
+    "pngPath": "../../assets/villes/Fronxa.png",
+    "type": "",
+    "culture": "",
+    "population": 0,
+    "temperature": 0,
+    "elevation": 0,
+    "features": []
+  },
+  "LOSTPAW": {
+    "name": "LostPaw",
+    "pngPath": "../../assets/villes/lostpaw.png",
+    "type": "",
+    "culture": "",
+    "population": 0,
+    "temperature": 0,
+    "elevation": 0,
+    "features": []
+  }
+}

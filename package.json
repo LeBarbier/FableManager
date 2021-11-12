@@ -13,6 +13,7 @@
     "name": "Guillaume Barbier"
   },
   "dependencies": {
+    "leaflet": "^1.7.1",
     "vue": "^2.6.12",
     "vue-router": "3.0.4"
   },

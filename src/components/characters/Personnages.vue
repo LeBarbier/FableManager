@@ -69,7 +69,7 @@
 <style scoped>
     .characters__liste {
         padding-top: 12px;
-        width: 70%;
+        width: 90%;
         margin: 0px 5%;
         text-align: center;
         border-spacing: 0px;
