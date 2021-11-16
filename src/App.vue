@@ -25,7 +25,7 @@
     }
 
     .conteneur {
-        left: 275px;
+        left: 250px;
         position: absolute;
         width: 70%;
     }

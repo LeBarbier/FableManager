@@ -2,35 +2,12 @@
     <div>
         <h1>Characters</h1>
 
-        <table class="characters__liste">
-            <tr class="characters__title">
-                <th>Level</th>
-                <th>Name</th>
-                <th>Class</th>
-                <th>Race</th>
-                <th></th>
-            </tr>
-            <tr v-for="personnage in personnages" :key="personnage.name" class="character__detail">
-                <td>
-                    {{ personnage.level }}
-                </td>
-                <td>
-                    {{ personnage.name }}
-                </td>
-                <td>
-                    {{ personnage.class }}
-                </td>
-                <td>
-                    {{ personnage.race }}
-                </td>
-                <td>
-                    <button class="button-74" role="button" v-on:click="afficherModalModifierPersonnage(personnage.name)">Modify</button>
-                </td>
-            </tr>
-        </table>
+        <fm-tableau :titres="titresTableau"
+                    :donnees="personnages"
+                    @modifyClicked="afficherModalModifierPersonnage"/>
 
-        <fm-personnage v-if="modifierPersonnage"
-                      :personnage-selectionner="personnageSelectionner"
+        <fm-personnage v-if="modifierPersonnage" 
+                       :personnage-selectionner="personnageSelectionner" 
                        @fermerModif="fermerModalModifierPersonnage"/>
     </div>
 </template>
@@ -38,10 +15,12 @@
 <script>
     import Personnage from '@/components/characters/Personnage.vue';
     import PersonnageService from '@/components/characters/PersonnageService.js';
+    import Tableau from '@/components/outils/Tableau.vue';
 
     export default {
         name: 'Personnages',
         components: {
+            'fm-tableau': Tableau,
             'fm-personnage': Personnage
         },
         data() {
@@ -54,9 +33,14 @@
         mounted() {
             this.personnages = PersonnageService.obtenirPersonnages();
         },
+        computed: {
+            titresTableau() {
+                return ['Name', 'Level', 'Race', 'Class'];
+            }
+        },
         methods: {
             afficherModalModifierPersonnage(nouveauPersonnageSelectionner) {
-                this.personnageSelectionner = nouveauPersonnageSelectionner;
+                this.personnageSelectionner = nouveauPersonnageSelectionner.name;
                 this.modifierPersonnage = true;
             },
             fermerModalModifierPersonnage() {

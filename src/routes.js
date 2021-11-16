@@ -1,16 +1,16 @@
 import home from './components/Home.vue';
 import characters from './components/characters/Personnages.vue';
-import world from './components/map/World.vue';
-import ville from './components/villes/Ville.vue'
+import map from './components/outils/Map.vue';
+import maps from './components/map/Maps.vue';
 
 export const routes = [
     { path: '/', component: home },
     { path: '/Characters', component: characters },
-    { path: '/World', component: world },
+    { path: '/Maps', component: maps },
     {
-        path: '/Town',
-        name: 'Town',
-        component: ville,
+        path: '/Map',
+        name: 'Map',
+        component: map,
         props: (route) => {
             return { ville: route.params.ville };
         }

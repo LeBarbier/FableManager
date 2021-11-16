@@ -4,25 +4,8 @@
         <ul class="menu__list">
             <li class="menu__item"><router-link to="/Characters">Characters</router-link></li>
             <li class="menu__item"><router-link to="/">Monsters</router-link></li>
-            <li class="menu__item">
-                <div class="dropdown">
-                    <button class="dropbtn">
-                        Towns
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <ul class="villes__dropdown">
-                            <li v-for="ville in villes" :key="ville.name">
-                                <router-link :to="{ name: 'Town', params: { ville: ville.name } }">
-                                    {{ ville.name }}
-                                </router-link>
-                                <!-- :to="{ name: 'CreerObservationIntervention', params: { idEcole: idEcole, groupe: null, eleves: [eleveCourant] } }" -->
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="menu__item"><router-link to="/World">World</router-link></li>
+            <li class="menu__item"><router-link to="/">Items</router-link></li>
+            <li class="menu__item"><router-link to="/Maps">Maps</router-link></li>
         </ul>
     </div>
 </template>
@@ -57,7 +40,7 @@
         top: 0;
     }
 
-    .menu__list{
+    .menu__list {
         padding: 25px 0;
         width: 85%;
         margin: auto;
@@ -85,7 +68,7 @@
         .menu__item a {
             color: #fbeee0;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
             width: 100%;
             letter-spacing: .15em;
             text-transform: uppercase;
@@ -99,6 +82,7 @@
         letter-spacing: .15em;
         text-transform: uppercase;
         font-size: 20px;
+        font-weight: 600;
     }
 
     .dropdown-content {
@@ -133,3 +117,23 @@
         padding: 0;
     }
 </style>
+
+
+<!--
+    <div class="dropdown">
+        <button class="dropbtn">
+            Towns
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <ul class="villes__dropdown">
+                <li v-for="ville in villes" :key="ville.name">
+                    <router-link :to="{ name: 'Town', params: { ville: ville.name } }">
+                        {{ ville.name }}
+                    </router-link>
+                        :to="{ name: 'CreerObservationIntervention', params: { idEcole: idEcole, groupe: null, eleves: [eleveCourant] } }"
+                </li>
+            </ul>
+        </div>
+    </div>
+ -->

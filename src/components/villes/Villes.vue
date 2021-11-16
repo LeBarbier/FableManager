@@ -1,29 +1,21 @@
 <template>
     <div>
-        <h1>Towns</h1>
+        <h2>Towns</h2>
 
-        <table class="villes__liste">
-            <tr class="villes__title">
-                <th>Name</th>
-            </tr>
-            <tr v-for="ville in villes" :key="ville.nom" class="ville__detail">
-                <td>
-                    {{ ville }}
-                </td>
-                <td>
-                    <button class="bouton__ouvrir" role="button" v-on:click="afficherModalModifierPersonnage(personnage.name)">Open</button>
-                </td>
-            </tr>
-        </table>
+        <fm-tableau :titres="['Name']"
+                    :donnees="villes"
+                    @modifyClicked="donnee => ouvrirVilleSelectionner(donnee)"/>
     </div>
 </template>
 
 <script>
     import VilleService from '@/components/villes/VilleService.js';
+    import Tableau from '@/components/outils/Tableau.vue';
 
     export default {
         name: 'Villes',
         components: {
+            'fm-tableau': Tableau
         },
         data() {
             return {
@@ -32,13 +24,24 @@
         },
         computed: {
             villes() {
-                return VilleService.obtenirVilles();
+                return VilleService.obtenirVilles().map(ville => { return { name: ville }});
+            }
+        },
+        methods: {
+            ouvrirVilleSelectionner(donnee) {
+                // :to="{ name: 'Town', params: { ville: ville.name } }
+                this.$router.push({ name: 'Map', params: { ville: donnee.name } });
             }
         }
     }
 </script>
 
 <style scoped>
+    a {
+        text-decoration: none;
+        color: #422800;
+    }
+
     .villes__liste {
         padding-top: 12px;
         width: 90%;
