@@ -36,21 +36,25 @@
         computed: {
         },
         mounted() {
-            var leafletMap = leaflet.map('map', { crs: leaflet.CRS.Simple }).setView([0, 0], 0);
-
-            var bounds = [[0, 0], [800, 750]];
-            const testVillePath = require("../../assets/villes/" + this.map.name.toLowerCase() + ".png");
-            leaflet.imageOverlay(testVillePath, bounds).addTo(leafletMap);
-
-            leafletMap.fitBounds(bounds);
-            leafletMap.setMaxBounds(bounds);
-            leafletMap.on('drag', function () {
-                leafletMap.panInsideBounds(bounds, { animate: false });
-            });
-
+            var leafletMap = this.initializeMap();
             this.initializeMarkers(leafletMap);
         },
         methods: {
+            initializeMap() {
+                var map = leaflet.map('map', { crs: leaflet.CRS.Simple }).setView([0, 0], 0);
+
+                var bounds = [[0, 0], [800, 750]];
+                const testVillePath = require("../../assets/villes/" + this.map.name.toLowerCase() + ".png");
+                leaflet.imageOverlay(testVillePath, bounds).addTo(map);
+
+                map.fitBounds(bounds);
+                map.setMaxBounds(bounds);
+                map.on('drag', function () {
+                    map.panInsideBounds(bounds, { animate: false });
+                });
+
+                return map;
+            },
             initializeMarkers(leafletMap) {
                 this.map.markers.forEach(marker => {
                     var leafletMarker = leaflet.marker({ lat: marker.lat, lng: marker.long });
