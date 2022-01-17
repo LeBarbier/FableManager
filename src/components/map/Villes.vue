@@ -9,18 +9,13 @@
 </template>
 
 <script>
-    import VilleService from '@/components/villes/VilleService.js';
+    import VilleService from '@/components/map/VilleService.js';
     import Tableau from '@/components/outils/Tableau.vue';
 
     export default {
         name: 'Villes',
         components: {
             'fm-tableau': Tableau
-        },
-        data() {
-            return {
-                personnageSelectionner: ""
-            }
         },
         computed: {
             villes() {
@@ -29,8 +24,8 @@
         },
         methods: {
             ouvrirVilleSelectionner(donnee) {
-                // :to="{ name: 'Town', params: { ville: ville.name } }
-                this.$router.push({ name: 'Map', params: { ville: donnee.name } });
+                const ville = VilleService.obtenirVilleFromNom(donnee.name);
+                this.$router.push({ name: 'Map', params: { map: ville } });
             }
         }
     }

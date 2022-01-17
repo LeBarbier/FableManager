@@ -10,7 +10,7 @@
 </template>
 
 <script>
-    import Villes from '@/components/villes/Villes.vue';
+    import Villes from '@/components/map/Villes.vue';
     import Continents from '@/components/continents/Continents.vue';
 
     export default {

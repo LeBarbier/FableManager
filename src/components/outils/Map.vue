@@ -1,32 +1,71 @@
 <template>
     <div>
-        <div id="map" class="map__container"></div>
+        <div id="map-header" class="map__header">
+            <h1 class="city__name">{{map.name}}</h1>
+            <fm-details-marker :selected-marker="selectedMarker" v-on:saveMarker="saveMarker" />
+        </div>
+
+        <div id="map" class="map__container" />
     </div>
 </template>
 
 <script>
     import leaflet from 'leaflet';
+    import DetailsMarker from '@/components/outils/DetailsMarker.vue';
+    import MapPopup from '@/components/outils/MapPopup.vue';
+    import VilleService from '@/components/map/VilleService.js';
 
     export default {
-        name: "Ville",
+        name: "Map",
+        components: {
+            'fm-popup': MapPopup,
+            'fm-details-marker': DetailsMarker
+        },
         props: {
-            ville: {
-                type: String,
+            map: {
+                type: Object,
                 required: true
             }
         },
+        data() {
+            return {
+                selectedMarker: null,
+                showDetails: false
+            };
+        },
+        computed: {
+        },
         mounted() {
-            var map = leaflet.map('map', { crs: leaflet.CRS.Simple }).setView([0, 0], 0);
+            var leafletMap = leaflet.map('map', { crs: leaflet.CRS.Simple }).setView([0, 0], 0);
 
             var bounds = [[0, 0], [800, 750]];
-            const testVillePath = require("../../assets/villes/" + this.ville.toLowerCase() + ".png");
-            leaflet.imageOverlay(testVillePath, bounds).addTo(map);
+            const testVillePath = require("../../assets/villes/" + this.map.name.toLowerCase() + ".png");
+            leaflet.imageOverlay(testVillePath, bounds).addTo(leafletMap);
 
-            map.fitBounds(bounds);
-            map.setMaxBounds(bounds);
-            map.on('drag', function () {
-                map.panInsideBounds(bounds, { animate: false });
+            leafletMap.fitBounds(bounds);
+            leafletMap.setMaxBounds(bounds);
+            leafletMap.on('drag', function () {
+                leafletMap.panInsideBounds(bounds, { animate: false });
             });
+
+            this.initializeMarkers(leafletMap);
+        },
+        methods: {
+            initializeMarkers(leafletMap) {
+                this.map.markers.forEach(marker => {
+                    var leafletMarker = leaflet.marker({ lat: marker.lat, lng: marker.long });
+                    leafletMarker.on('click', () => this.markerClicked(marker));
+
+                    leafletMarker.addTo(leafletMap);
+                });
+            },
+            markerClicked(marker) {
+                this.showDetails = true;
+                this.selectedMarker = marker;
+            },
+            saveMarker(marker) {
+                VilleService.modifierMarqueurVille(this.map.name, marker);
+            }
         }
     }
 </script>
@@ -34,7 +73,15 @@
 <style scoped>
     @import 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.css';
 
+    .city__name {
+        font-weight: bold;
+        font-size: 32px;
+        padding: 0 2px;
+        margin: 12px 4px;
+    }
+
     .map__container {
         height: 800px;
+        border-radius: 4px;
     }
 </style>

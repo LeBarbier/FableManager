@@ -11,7 +11,7 @@
 </template>
 
 <script>
-    import VilleService from '@/components/villes/VilleService.js';
+    import VilleService from '@/components/map/VilleService.js';
 
     export default {
         name: 'NavigationBar',

@@ -42,7 +42,7 @@
     <Content Include="src\assets\villes\fronxa.png" />
     <Content Include="src\assets\villes\lostpaw.png" />
     <Content Include="src\assets\villes\osa.png" />
-    <Content Include="src\assets\villes\silvercoves.png" />
+    <Content Include="src\assets\villes\silvercove.png" />
     <Content Include="src\assets\Valia 2021-07-23-09-11.jpeg" />
     <Content Include="src\components\characters\Personnage.vue" />
     <Content Include="src\components\characters\Personnages.vue" />
@@ -50,15 +50,17 @@
     <Content Include="src\components\Home.vue" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="src\components\outils\DetailsMarker.vue" />
     <Content Include="src\components\outils\Map.vue" />
     <Content Include="src\assets\data\villes\villes.json" />
     <Content Include="src\components\characters\PersonnageService.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="src\components\map\Maps.vue" />
+    <Content Include="src\components\outils\MapPopup.vue" />
     <Content Include="src\components\outils\Tableau.vue" />
-    <Content Include="src\components\villes\Villes.vue" />
-    <Content Include="src\components\villes\VilleService.js" />
+    <Content Include="src\components\map\Villes.vue" />
+    <Content Include="src\components\map\VilleService.js" />
     <Content Include="src\routes.js" />
   </ItemGroup>
   <ItemGroup>
@@ -77,7 +79,6 @@
     <Folder Include="src\components\map\" />
     <Folder Include="src\components\continents\" />
     <Folder Include="src\components\outils\" />
-    <Folder Include="src\components\villes\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="babel.config.js" />

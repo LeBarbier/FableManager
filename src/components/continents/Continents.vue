@@ -3,7 +3,8 @@
         <h1>Continents</h1>
 
         <fm-tableau :titres="['Name']"
-                    :donnees="[{name: 'Orion'}]" />
+                    :donnees="[{name: 'Orion'}]"
+                    @modifyClicked="donnee => ouvrirContinentSelectionner(donnee)"/>
     </div>
 </template>
 
@@ -14,6 +15,11 @@
         name: 'Continents',
         components: {
             'fm-tableau': Tableau
+        },
+        methods: {
+            ouvrirContinentSelectionner(donnee) {
+                this.$router.push({ name: 'Map', params: { map: donnee.name } });
+            }
         }
     }
 </script>

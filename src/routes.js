@@ -12,8 +12,7 @@ export const routes = [
         name: 'Map',
         component: map,
         props: (route) => {
-            return { ville: route.params.ville };
+            return { map: route.params.map };
         }
     }
-        // route => {  console.log(route); return { ville: route.params.ville } }
 ]

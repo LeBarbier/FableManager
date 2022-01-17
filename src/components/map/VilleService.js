@@ -8,4 +8,10 @@ export default class VilleService {
         const villes = require("@/assets/data/villes/villes.json");
         return villes[nom];
     }
+
+    static modifierMarqueurVille(ville, marker) {
+        const villes = require("@/assets/data/villes/villes.json");
+        // villes.SILVERCOVES.markers
+        villes[ville].markers.find(m => m.id = marker.id);
+    }
 }

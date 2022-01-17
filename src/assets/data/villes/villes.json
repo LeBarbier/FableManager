@@ -1,13 +1,14 @@
-{
-  "SILVERCOVES": {
-    "name": "Silvercoves",
+﻿{
+  "SILVERCOVE": {
+    "name": "Silvercove",
     "pngPath": "../../assets/villes/silvercoves.png",
     "type": "",
     "culture": "",
     "population": 0,
     "temperature": 16,
     "elevation": 480,
-    "features": ["citadel", "religious_centre"]
+    "features": [ "citadel", "religious_centre" ],
+    "markers": [{"id": 1, "titre": "Citadel", "lat": 418, "long": 214, "description": "Citadel de la ville où les hauts gradés résident."}]
   },
   "EDINBURGH": {
     "name": "Edinburgh",
