@@ -20,15 +20,29 @@
         </div>
 
         <div class="markerDetails__button">
-            <button v-if="markerIsReadOnly"
-                    v-on:click="modifyMarker"
-                    :disabled="noMarkerSelected">Modify</button>
-            <button v-else>Save</button>
+            <button v-if="currentState === 'add'"
+                    v-on:click="save">
+                Add
+            </button>
+            <button v-if="currentState === 'readOnly'"
+                    v-on:click="modifyMarker">
+                Modify
+            </button>
+            <button v-if="currentState === 'modify'"
+                    v-on:click="save">
+                Save
+            </button>
+            <button v-if="isMarkerModified"
+                    v-on:click="cancel">
+                Cancel
+            </button>
         </div>
     </div>
 </template>
 
 <script>
+    import _ from 'lodash';
+
     export default {
         name: "DetailsMarker",
         props: {
@@ -39,27 +53,60 @@
         },
         data() {
             return {
-                markerIsReadOnly: true,
-                marker: {titre: '', description: ''}
+                state: 0,
+                marker: { titre: '', description: '' }
             }
         },
         computed: {
+            currentState() {
+                const enumState = ['add', 'readOnly', 'modify'];
+                return enumState[this.state];
+            },
+            markerIsReadOnly() {
+                return this.state === 1;
+            },
             noMarkerSelected() {
                 return this.selectedMarker === null;
+            },
+            isMarkerModified() {
+                return (this.marker.id !== undefined && this.marker.titre !== this.selectedMarker.titre) ||
+                    (this.marker.id === undefined && this.marker.titre !== '') ||
+                    (this.selectedMarker.id !== undefined && this.marker.description !== this.selectedMarker.description);
+            },
+            emptyMarkerModel() {
+                return { titre: '', description: '' };
             }
         },
         methods: {
-            modifyMarker() {
-                this.markerIsReadOnly = !this.markerIsReadOnly;
+            cancel() {
+                if (this.selectedMarker) {
+                    this.marker = this.selectedMarker;
+                    this.state = 1;
+                } else {
+                    this.marker = this.emptyMarkerModel;
+                    this.state = 0;
+                }
+
             },
-            saveMarker() {
+            modifyMarker() {
+                this.state = 2;
+            },
+            nouveauMarqueurSelectionne(newMarker) {
+                if (newMarker.titre === undefined) {
+                    this.state = 0;
+                    this.marker = this.emptyMarkerModel
+                } else {
+                    this.marker = _.clone(newMarker);
+                    this.state = 1;
+                }
+            },
+            save() {
                 this.$emit('saveMarker', this.marker);
             }
         },
         watch: {
             selectedMarker: function (newMarker) {
-                this.markerIsReadOnly = true;
-                this.marker = newMarker;
+                this.nouveauMarqueurSelectionne(newMarker);
             }
         }
     }

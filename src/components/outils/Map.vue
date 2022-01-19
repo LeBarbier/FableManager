@@ -29,8 +29,7 @@
         },
         data() {
             return {
-                selectedMarker: null,
-                showDetails: false
+                selectedMarker: {}
             };
         },
         computed: {
@@ -52,6 +51,12 @@
                 map.on('drag', function () {
                     map.panInsideBounds(bounds, { animate: false });
                 });
+                map.on('click', (positionClicked) => {
+                    const latlng = positionClicked.latlng;
+                    var leafletMarker = leaflet.marker({ lat: latlng.lat, lng: latlng.lng });
+                    this.initialiserNouveauMarqueur(latlng);
+                    leafletMarker.addTo(map)
+                });
 
                 return map;
             },
@@ -63,8 +68,14 @@
                     leafletMarker.addTo(leafletMap);
                 });
             },
+            initialiserNouveauMarqueur(latlng) {
+                this.selectedMarker = {};
+                this.selectedMarker = {
+                    lat: Math.trunc(latlng.lat),
+                    lng: Math.trunc(latlng.lng)
+                }
+            },
             markerClicked(marker) {
-                this.showDetails = true;
                 this.selectedMarker = marker;
             },
             saveMarker(marker) {
