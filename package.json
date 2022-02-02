@@ -6,7 +6,8 @@
     "start": "vue-cli-service serve --port 80",
     "watch": "vue-cli-service serve --watchAll",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test": "jest --watch --colors --collectCoverage"
   },
   "description": "FableManager",
   "author": {
@@ -18,15 +19,16 @@
     "vue-router": "3.0.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/helper-compilation-targets": "^7.13.16",
+    "@babel/core": "^7.16.12",
+    "@babel/helper-compilation-targets": "^7.16.7",
     "@vue/cli-plugin-babel": "3.0.4",
     "@vue/cli-plugin-eslint": "3.0.4",
     "@vue/cli-service": "3.0.4",
     "babel-eslint": "^10.1.0",
     "eslint": "^4.0.0",
     "eslint-plugin-vue": "4.7.1",
-    "node-fetch": "^2.6.1",
+    "jest": "^27.4.7",
+    "node-fetch": "^2.6.7",
     "vue-template-compiler": "^2.6.12"
   },
   "eslintConfig": {
@@ -54,5 +56,9 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
+  ],
+  "moduleDirectories": [
+    "node_modules",
+    "src"
   ]
 }
