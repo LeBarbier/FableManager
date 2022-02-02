@@ -26,6 +26,11 @@ describe('Test de villeService', () => {
 
         expect(infoVille).toBeInstanceOf(Object);
     });
+
+    test('obtenirVilleFromNom_NomInexistant_RetourneInfoVille', () => {
+        const infoVille = villeService.obtenirVilleFromNom('allo');
+        expect(infoVille).toBe(undefined);
+    });
 });
 
 function obtenirNomVille() {
