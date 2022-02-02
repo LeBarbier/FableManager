@@ -62,6 +62,8 @@
     <Content Include="src\components\map\Villes.vue" />
     <Content Include="src\components\map\VilleService.js" />
     <Content Include="src\routes.js" />
+    <Content Include="tests\components\characters\PersonnageService.test.js" />
+    <Content Include="tests\components\villes\VilleService.test.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="dist\" />
@@ -77,11 +79,16 @@
     <Folder Include="src\components\" />
     <Folder Include="src\components\characters\" />
     <Folder Include="src\components\map\" />
+    <Folder Include="src\components\villes\" />
+    <Folder Include="tests\" />
+    <Folder Include="tests\components\" />
+    <Folder Include="tests\components\characters\" />
+    <Folder Include="tests\components\villes\" />
     <Folder Include="src\components\continents\" />
     <Folder Include="src\components\outils\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="babel.config.js" />
+    <Content Include="babel.config.cjs" />
     <Content Include="src\components\NavigationBar.vue" />
     <Content Include="src\main.js" />
   </ItemGroup>
