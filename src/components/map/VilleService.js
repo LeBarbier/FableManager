@@ -1,11 +1,11 @@
 export default class VilleService {
     static obtenirVilles() {
-        const villes = require("@/assets/data/villes/villes.json");
+        const villes = require("../../../src/assets/data/villes/villes.json");
         return Object.keys(villes);
     }
 
     static obtenirVilleFromNom(nom) {
-        const villes = require("@/assets/data/villes/villes.json");
+        const villes = require("../../../src/assets/data/villes/villes.json");
         return villes[nom];
     }
 
@@ -16,7 +16,7 @@ export default class VilleService {
             return null;
         }
         
-        const villes = require("@/assets/data/villes/villes.json");
+        const villes = require("../../../src/assets/data/villes/villes.json");
         const infosVille = villes[ville.toUpperCase()];
 
         if (infosVille === undefined || infosVille === null) return null;

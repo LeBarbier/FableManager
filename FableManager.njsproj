@@ -63,7 +63,7 @@
     <Content Include="src\components\map\VilleService.js" />
     <Content Include="src\routes.js" />
     <Content Include="tests\components\characters\PersonnageService.test.js" />
-    <Content Include="tests\components\villes\VilleService.test.js" />
+    <Content Include="tests\components\map\VilleService.test.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="dist\" />
@@ -79,11 +79,10 @@
     <Folder Include="src\components\" />
     <Folder Include="src\components\characters\" />
     <Folder Include="src\components\map\" />
-    <Folder Include="src\components\villes\" />
     <Folder Include="tests\" />
     <Folder Include="tests\components\" />
     <Folder Include="tests\components\characters\" />
-    <Folder Include="tests\components\villes\" />
+    <Folder Include="tests\components\map\" />
     <Folder Include="src\components\continents\" />
     <Folder Include="src\components\outils\" />
   </ItemGroup>
